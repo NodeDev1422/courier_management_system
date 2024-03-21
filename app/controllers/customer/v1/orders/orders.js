@@ -41,7 +41,7 @@ const createOrder = async (req, res) => {
   const orderQACode = time + customerId.slice(-5);
   const QRUrl = await qr.toDataURL(orderQACode);
 
-  const QACode = await createCenterQAText(QRUrl);
+  const QRCode = await createCenterQAText(QRUrl);
 
   const { source, destination, contentType, weight } = req.body;
   await OrdersModel({
@@ -51,11 +51,11 @@ const createOrder = async (req, res) => {
     contentType,
     weight,
     QRScanCode: orderQACode,
-    QRCode: QACode,
+    QRCode: QRCode,
     orderStatus: "Order Initiated"
   }).save();
 
-  return res.status(200).send({ msg: "Success!", data: { QACode } });
+  return res.status(200).send({ msg: "Success!", data: { QRCode } });
 };
 
 async function createCenterQAText(QRUrl) {

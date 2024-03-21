@@ -1,0 +1,126 @@
+-- Define a new table type
+/*
+CREATE TYPE parent_student_profile_type2 AS (
+    id int,
+    branch_id int,
+    first_name character varying(50),
+    last_name character varying(50),
+    spouse_first_name character varying(50),
+    spouse_last_name character varying(50),
+    primary_mobile character varying(50),
+    secondary_mobile character varying(50),
+    primary_email character varying(50),
+    secondary_email character varying(50),
+    permanent_residence_address text,
+    current_residence_address text,
+    occupation character varying(50),
+    profile_image text,
+    is_enabled boolean,
+    city int,
+    state int,
+    country int,
+    created_at timestamp with time zone,
+    updated_at timestamp with time zone,
+    deleted_at timestamp with time zone,
+    student_id int,
+    student_first_name character varying(50),
+    student_last_name character varying(50),
+    student_gender character varying(50),
+    student_aadhar character varying(50),
+    student_date_of_birth date,
+    date_of_joining date,
+    current_grade_level int,
+    roll_number character varying(50),
+    student_branch_id int,
+    branch_name character varying(50)
+);
+*/
+
+-- Drop the previous function if it exists
+DROP FUNCTION IF EXISTS parent_student_profile;
+
+-- Create the new function
+CREATE OR REPLACE FUNCTION parent_student_profile(parent_id_value int, student_id_value int, access_mode int)
+RETURNS TABLE (
+   /* id int,
+    branch_id int,
+    first_name character varying(50),
+    last_name character varying(50),
+    spouse_first_name character varying(50),
+    spouse_last_name character varying(50),
+    primary_mobile character varying(50),
+    secondary_mobile character varying(50),
+    primary_email character varying(50),
+    secondary_email character varying(50),
+    permanent_residence_address text,
+    current_residence_address text,
+    occupation character varying(50),
+    profile_image text,
+    is_enabled boolean,
+    created_at timestamp with time zone,
+    updated_at timestamp with time zone,
+    deleted_at timestamp with time zone,
+    mainBool Boolean,
+	city int,
+    state int,
+    country int,*/
+	student_id int,
+    student_first_name character varying(50),
+    student_last_name character varying(50),
+    student_gender character varying(50),
+    student_aadhar character varying(50),
+    student_date_of_birth date,
+    date_of_joining date,
+    current_grade_level int,
+    roll_number character varying(50),
+    student_branch_id int,
+    branch_name character varying(50)
+) AS $$
+BEGIN
+    IF access_mode = 2 THEN
+        RETURN QUERY
+        SELECT
+           /* "Parent".*,*/
+            "student"."id" AS "student_id",
+            "student"."first_name" AS "student_first_name", 
+            "student"."last_name" AS "student_last_name",
+            "student"."gender" AS "student_gender",
+            "student"."aadhar" AS "student_aadhar",
+            "student"."date_of_birth" AS "student_date_of_birth",
+            "student"."date_of_joining",
+            "student"."current_grade_level",
+            "student"."roll_number",
+            "student"."branch_id" AS "student_branch_id",
+            "b"."branch_name"
+        FROM
+            "parent" AS "Parent"
+            INNER JOIN "student" AS "student" ON "Parent"."id" = "student"."parent_id"
+            AND ("student"."deleted_at" IS NULL) 
+            RIGHT OUTER JOIN "school_branch" AS b ON "b"."id" = "student"."branch_id"
+        WHERE
+            "Parent"."deleted_at" IS NULL AND "Parent"."id" = parent_id_value;
+    ELSE
+        RETURN QUERY
+        SELECT
+            "Parent".*,
+            "student"."id" AS "student_id",
+            "student"."first_name" AS "student_first_name", 
+            "student"."last_name" AS "student_last_name",
+            "student"."gender" AS "student_gender",
+            "student"."aadhar" AS "student_aadhar",
+            "student"."date_of_birth" AS "student_date_of_birth",
+            "student"."date_of_joining",
+            "student"."current_grade_level",
+            "student"."roll_number",
+            "student"."branch_id" AS "student_branch_id",
+            "b"."branch_name"
+        FROM
+            "parent" AS "Parent"
+            INNER JOIN "student" AS "student" ON "Parent"."id" = "student"."parent_id"
+            AND ("student"."deleted_at" IS NULL) 
+            RIGHT OUTER JOIN "school_branch" AS b ON "b"."id" = "student"."branch_id"
+        WHERE
+            "Parent"."deleted_at" IS NULL AND "Parent"."id" = parent_id_value;
+    END IF;
+END;
+$$ LANGUAGE plpgsql;

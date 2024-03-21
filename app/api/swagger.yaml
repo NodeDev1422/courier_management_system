@@ -1,0 +1,505 @@
+openapi: 3.0.0
+info:
+  title: Syntizen-CKYC - Admin APIS
+  description: Below are the list of all API's for Admin dashboard
+  version: 1.0.0
+schemas:
+  - https
+  - http
+
+consumes:
+  - application/json
+
+produces:
+  - application/json
+
+servers:
+  - url: /api/
+
+tags:
+  - name: User
+    description: User API's for Admin dashboard
+  - name: Common
+    description: Common API's for Admin dashboard
+  - name: Branch
+    description: Branch API's for Admin dashboard
+  - name: Ckycuser
+    description: Ckyc API's for Admin dashboard
+
+paths:
+  "/users/login":
+    post:
+      tags:
+        - User
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user:
+                  type: object
+                  properties:
+                    username:
+                      type: string
+                      example: admin
+                    password:
+                      type: string
+                      example: "P@ssw0rd"
+      responses:
+        "200":
+          description: Default Response
+  "/users/password/recovery":
+    post:
+      tags:
+        - User
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - email
+              properties:
+                email:
+                  type: string
+                  example: raghavendra@purpleplum.design
+      responses:
+        "200":
+          description: Default Response
+
+  "/users/password/set":
+    post:
+      tags:
+        - User
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - newPassword
+                - token
+              properties:
+                newPassword:
+                  type: string
+                  example: P@ssw0rd
+                token:
+                  type: string
+                  example: c6ebcf4c35c9df69
+      responses:
+        "200":
+          description: Default Response
+  "/users/{id}/reset":
+    put:
+      tags:
+        - User
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          description: Pass user id
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - oldPassword
+                - password
+              properties:
+                oldPassword:
+                  type: string
+                  example: P@ssw0rd
+                password:
+                  type: string
+                  example: 123@Abc9
+      responses:
+        "200":
+          description: Default Response
+
+  "/static/getStates":
+    get:
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - Common
+      responses:
+        "200":
+          description: Default Response
+  "/static/getCities":
+    get:
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - Common
+      parameters:
+        - name: stateName
+          in: query
+          description: Pass state value
+          required: true
+          schema:
+            type: string
+            example: Delhi
+      responses:
+        "200":
+          description: Default Response
+
+  "/branches/list":
+    get:
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - Branch
+      parameters:
+        - name: perPage
+          in: query
+          description: Pass per page value
+          required: true
+          schema:
+            type: integer
+            example: 1
+            minLength: 1
+        - name: offset
+          in: query
+          description: Pass offset value
+          required: true
+          schema:
+            type: integer
+            example: 0
+            minLength: 1
+        - name: filter
+          in: query
+          description: Pass filter value
+          schema:
+            type: integer
+            "enum": [0, 1]
+        - name: search
+          in: query
+          description: search values
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Default Response
+
+  "/branches/create":
+    post:
+      tags:
+        - Branch
+      security:
+        - ApiKeyAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - brName
+                - brCode
+                - brManagerName
+                - contNumber
+                - pincode
+                - address
+              properties:
+                brName:
+                  type: string
+                  example: Head office
+                brCode:
+                  type: string
+                  example: IDB1770494
+                brManagerName:
+                  type: string
+                  example: Deanna curtis
+                contNumber:
+                  type: string
+                  example: +91 908389849
+                pincode:
+                  type: string
+                  example: 1
+                address:
+                  type: string
+                  example: center bank head quarters, Delhi city, Delhi
+
+      responses:
+        "200":
+          description: Default Response
+
+  "/branches/edit":
+    put:
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - Branch
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                brId:
+                  type: integer
+                  example: 1
+                brName:
+                  type: string
+                  example: Head office
+                brCode:
+                  type: string
+                  example: IDB1001
+                brManager:
+                  type: string
+                  example: Deanna curtis
+                contNumber:
+                  type: string
+                  example: +91 908389849
+                pincode:
+                  type: string
+                  example: 1
+                address:
+                  type: string
+                  example: center bank head quarters, Delhi city, Delhi
+                status:
+                  type: string
+                  example: 1
+
+      responses:
+        "200":
+          description: Default Response
+
+  "/branches/delete":
+    delete:
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - Branch
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                brId:
+                  type: integer
+                  example: 1
+
+      responses:
+        "200":
+          description: Default Response
+
+  "/ckycUsers/list":
+    get:
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - Ckycuser
+      parameters:
+        - name: perPage
+          in: query
+          description: Pass per page value
+          required: true
+          schema:
+            type: integer
+            example: 1
+            minLength: 1
+        - name: offset
+          in: query
+          description: Pass offset value
+          required: true
+          schema:
+            type: integer
+            example: 0
+            minLength: 1
+        - name: statusFilter
+          in: query
+          description: Pass filter value
+          schema:
+            type: integer
+            "enum": [0, 1]
+        - name: search
+          in: query
+          description: search values
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Default Response
+
+  "/ckycUsers/create":
+    post:
+      tags:
+        - Ckycuser
+      security:
+        - ApiKeyAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - dmsUserName
+                - fiCode
+                - version
+                - instUserId
+                - instBranchCode
+                - instRegionCode
+                - ckycBranchCode
+                - ckycRegionCode
+                - password
+              properties:
+                dmsUserName:
+                  type: string
+                  example: Deanna Curtis me
+                fiCode:
+                  type: string
+                  example: IND1071
+                version:
+                  type: string
+                  example: v1
+                instUserId:
+                  type: string
+                  example: 909059090
+                instBranchCode:
+                  type: string
+                  example: 188
+                instRegionCode:
+                  type: string
+                  example: 211
+                ckycBranchCode:
+                  type: string
+                  example: 221
+                ckycRegionCode:
+                  type: string
+                  example: 54
+                password:
+                  type: string
+                  example: 123456
+
+      responses:
+        "200":
+          description: Default Response
+
+  "/ckycUsers/edit":
+    put:
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - Ckycuser
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ckycUserId:
+                  type: string
+                  example: 1
+                dmsUserName:
+                  type: string
+                  example: Deanna Curtis me
+                fiCode:
+                  type: string
+                  example: IND1071
+                version:
+                  type: string
+                  example: v1
+                instUserId:
+                  type: string
+                  example: 909059090
+                instBranchCode:
+                  type: string
+                  example: 188
+                instRegionCode:
+                  type: string
+                  example: 211
+                ckycBranchCode:
+                  type: string
+                  example: 221
+                ckycRegionCode:
+                  type: string
+                  example: 54
+                password:
+                  type: string
+                  example: 123456
+                status:
+                  type: string
+                  example: 1
+
+      responses:
+        "200":
+          description: Default Response
+
+  "/ckycUsers/delete":
+    delete:
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - Ckycuser
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ckycUserId:
+                  type: integer
+                  example: 1
+
+      responses:
+        "200":
+          description: Default Response
+  
+  "/customers/downloadZip":
+    post:
+      tags:
+        - Customer
+      security:
+        - ApiKeyAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - customerIds
+              properties:
+                customerIds:
+                  type: array
+                  example: [1,3]
+                
+      responses:
+        "200":
+          description: Default Response
+
+  "/customers/bulkSearch":
+    post:
+      tags:
+        - Customer
+      security:
+        - ApiKeyAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - search
+              properties:
+                search:
+                  type: array
+                  example: [{ "custId": 54,"identityType": "A" }]
+                isSftp:
+                  type: boolean
+                  example: true
+                
+      responses:
+        "200":
+          description: Default Response
+
+components:
+  securitySchemes:
+    ApiKeyAuth: # arbitrary name for the security scheme
+      type: apiKey
+      in: header # can be "header", "query" or "cookie"
+      name: Authorization # name of the header, query parameter or cookie
+      description: Please pass token with Bearer

@@ -13,6 +13,7 @@ const fs = require('fs');
 const isProduction = process.env.NODE_ENV === 'production';
 const os = require("os");
 const userModel = require('./app/models/customer/v1/Customers');
+const { dataInsertion } = require('./seeders/dataInsertion');
 const cpuCores = os.cpus().length;
 //console.log('CPU Cores',cpuCores);
 
@@ -56,6 +57,7 @@ app.use(function (req, res, next) {
   err.status = 404;
   next(err);
 });
+
 
 /// error handlers
 
@@ -134,5 +136,6 @@ if (global.gc) {
 var server = app.listen(process.env.PORT || 3000, async function () {
   await connection();
   console.log('Listening on port ' + server.address().port);
-});
+  await dataInsertion(truncate = true);  //true means truncate all data
 
+});

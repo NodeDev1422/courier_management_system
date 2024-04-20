@@ -3,6 +3,7 @@ const router = require('express').Router();
 router.use('/auth', require('./auth'));
 router.use('/order', require('./orders'));
 router.use('/master', require('./masterData'));
+router.use('/', require('./customer'));
 // router.use('/branches', require('./branches'));
 // router.use('/ckycUsers', require('./ckycUsers'));
 // router.use('/documents', require('./documents'));

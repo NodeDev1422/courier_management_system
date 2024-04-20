@@ -1,0 +1,433 @@
+[{
+    "commodityId": "1",
+    "commodityCode": "ARTIFICIAL_JEWELLERY",
+    "commodityName": "ARTIFICIAL JEWELLERY",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "showInCustomerPortal": true,
+    "categoryId": "GIFT_ITEMS_AND_PERSONAL_EFFECTS",
+    "categoryName": "Gift Items & Personal Effects"
+  },
+  {
+    "commodityId": "2",
+    "commodityCode": "AUTO_MACHINE_PARTS",
+    "commodityName": "AUTO / MACHINE PARTS",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "showInCustomerPortal": true,
+    "categoryId": "AUTO_COMPONENTS_AND_MACHINE_PARTS",
+    "categoryName": "Auto Components & Machine Parts"
+  },
+  {
+    "commodityId": "3",
+    "commodityCode": "BOOKS",
+    "commodityName": "BOOKS",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "showInLtl": true,
+    "showInCustomerPortal": true,
+    "categoryId": "GIFT_ITEMS_AND_PERSONAL_EFFECTS",
+    "categoryName": "Gift Items & Personal Effects"
+  },
+  {
+    "commodityId": "4",
+    "commodityCode": "USCBL",
+    "commodityName": "CABLES/WIRES (USB)",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "CONSUMER_ELECTRONICS_AND_ACCESSORIES",
+    "categoryName": "Consumer Electronics & Accessories"
+  },
+  {
+    "commodityId": "5",
+    "commodityCode": "CAM",
+    "commodityName": "CAMERA",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "showInCustomerPortal": true,
+    "categoryId": "CONSUMER_ELECTRONICS_AND_ACCESSORIES",
+    "categoryName": "Consumer Electronics & Accessories"
+  },
+  {
+    "commodityId": "6",
+    "commodityCode": "CD_DVDs",
+    "commodityName": "CD",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "CONSUMER_ELECTRONICS_AND_ACCESSORIES",
+    "categoryName": "Consumer Electronics & Accessories"
+  },
+  {
+    "commodityId": "7",
+    "commodityCode": "CHRG",
+    "commodityName": "CHARGER SET",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "CONSUMER_ELECTRONICS_AND_ACCESSORIES",
+    "categoryName": "Consumer Electronics & Accessories"
+  },
+  {
+    "commodityId": "8",
+    "commodityCode": "BANK_INS",
+    "commodityName": "CHEQUE BOOK",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "ESSENTIAL_SHIPMENTS",
+    "categoryName": "Essential Shipments"
+  },
+  {
+    "commodityId": "9",
+    "commodityCode": "CHOCOLATES",
+    "commodityName": "CHOCOLATES",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "showInCustomerPortal": true,
+    "categoryId": "ESSENTIAL_SHIPMENTS",
+    "categoryName": "Essential Shipments"
+  },
+  {
+    "commodityId": "10",
+    "commodityCode": "CLTH",
+    "commodityName": "CLOTH ITEM",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "GIFT_ITEMS_AND_PERSONAL_EFFECTS",
+    "categoryName": "Gift Items & Personal Effects"
+  },
+  {
+    "commodityId": "11",
+    "commodityCode": "COMP_PERI",
+    "commodityName": "COMPUTER PERIPHERALS",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "showInLtl": true,
+    "categoryId": "CONSUMER_ELECTRONICS_AND_ACCESSORIES",
+    "categoryName": "Consumer Electronics & Accessories"
+  },
+  {
+    "commodityId": "12",
+    "commodityCode": "CD2",
+    "commodityName": "CORPORATE GIFTS",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "GIFT_ITEMS_AND_PERSONAL_EFFECTS",
+    "categoryName": "Gift Items & Personal Effects"
+  },
+  {
+    "commodityId": "13",
+    "commodityCode": "CREDIT_DEBIT_CARD",
+    "commodityName": "CREDIT / DEBIT CARD",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "showInCustomerPortal": true,
+    "categoryId": "ESSENTIAL_SHIPMENTS",
+    "categoryName": "Essential Shipments"
+  },
+  {
+    "commodityId": "14",
+    "commodityCode": "BD1",
+    "commodityName": "DOCUMENTS",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "PAPER_BASED_MATERIAL",
+    "categoryName": "Paper Based Material"
+  },
+  {
+    "commodityId": "15",
+    "commodityCode": "DRY_FRUIT",
+    "commodityName": "DRY FRUIT",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "ESSENTIAL_SHIPMENTS",
+    "categoryName": "Essential Shipments"
+  },
+  {
+    "commodityId": "16",
+    "commodityCode": "ELECTRONIC_ITEM",
+    "commodityName": "ELECTRONIC ITEM",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "CONSUMER_ELECTRONICS_AND_ACCESSORIES",
+    "categoryName": "Consumer Electronics & Accessories"
+  },
+  {
+    "commodityId": "17",
+    "commodityCode": "FI1",
+    "commodityName": "FOOD ITEM (PACKAGED)",
+    "showInSmartApp": false,
+    "organisationId": "1",
+    "categoryId": "ESSENTIAL_SHIPMENTS",
+    "categoryName": "Essential Shipments"
+  },
+  {
+    "commodityId": "18",
+    "commodityCode": "FURNITURE",
+    "commodityName": "FURNITURE",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "showInCustomerPortal": true,
+    "categoryId": "HOUSEHOLD_ITEMS",
+    "categoryName": "Household Items"
+  },
+  {
+    "commodityId": "19",
+    "commodityCode": "BC1",
+    "commodityName": "GADGET COVER",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "GIFT_ITEMS_AND_PERSONAL_EFFECTS",
+    "categoryName": "Gift Items & Personal Effects"
+  },
+  {
+    "commodityId": "20",
+    "commodityCode": "EAR",
+    "commodityName": "HEADPHONE",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "CONSUMER_ELECTRONICS_AND_ACCESSORIES",
+    "categoryName": "Consumer Electronics & Accessories"
+  },
+  {
+    "commodityId": "21",
+    "commodityCode": "HOME_APPLIANCE",
+    "commodityName": "HOME APPLIANCE",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "CONSUMER_ELECTRONICS_AND_ACCESSORIES",
+    "categoryName": "Consumer Electronics & Accessories"
+  },
+  {
+    "commodityId": "22",
+    "commodityCode": "HOUSEHOLD_GOODS",
+    "commodityName": "HOUSEHOLD GOODS",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "showInCustomerPortal": true,
+    "categoryId": "HOUSEHOLD_ITEMS",
+    "categoryName": "Household Items"
+  },
+  {
+    "commodityId": "23",
+    "commodityCode": "LAP",
+    "commodityName": "LAPTOP",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "isMbgRestricted": true,
+    "showInCustomerPortal": true,
+    "categoryId": "CONSUMER_ELECTRONICS_AND_ACCESSORIES",
+    "categoryName": "Consumer Electronics & Accessories"
+  },
+  {
+    "commodityId": "24",
+    "commodityCode": "LAPTOP_BAG_HANDBAG",
+    "commodityName": "LAPTOP BAG / HANDBAG",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "showInCustomerPortal": true,
+    "categoryId": "CONSUMER_ELECTRONICS_AND_ACCESSORIES",
+    "categoryName": "Consumer Electronics & Accessories"
+  },
+  {
+    "commodityId": "25",
+    "commodityCode": "LED_LIGHTS",
+    "commodityName": "LED LIGHTS",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "showInCustomerPortal": true,
+    "categoryId": "CONSUMER_ELECTRONICS_AND_ACCESSORIES",
+    "categoryName": "Consumer Electronics & Accessories"
+  },
+  {
+    "commodityId": "26",
+    "commodityCode": "LUGGAGE",
+    "commodityName": "LUGGAGE",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "showInCustomerPortal": true,
+    "categoryId": "GIFT_ITEMS_AND_PERSONAL_EFFECTS",
+    "categoryName": "Gift Items & Personal Effects"
+  },
+  {
+    "commodityId": "27",
+    "commodityCode": "MEDICAL_EQUIPMENT",
+    "commodityName": "MEDICAL EQUIPMENT",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "showInCustomerPortal": true,
+    "categoryId": "MEDICAL_SUPPLIES_AND_EQUIPMENT",
+    "categoryName": "Medical Supplies & Equipment"
+  },
+  {
+    "commodityId": "28",
+    "commodityCode": "MEDICINES",
+    "commodityName": "MEDICINES",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "showInCustomerPortal": true,
+    "categoryId": "MEDICAL_SUPPLIES_AND_EQUIPMENT",
+    "categoryName": "Medical Supplies & Equipment"
+  },
+  {
+    "commodityId": "29",
+    "commodityCode": "MEL",
+    "commodityName": "MOBILE",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "isMbgRestricted": true,
+    "showInCustomerPortal": true,
+    "categoryId": "CONSUMER_ELECTRONICS_AND_ACCESSORIES",
+    "categoryName": "Consumer Electronics & Accessories"
+  },
+  {
+    "commodityId": "30",
+    "commodityCode": "MOBILE_ACCESSORIES",
+    "commodityName": "MOBILE ACCESSORIES",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "CONSUMER_ELECTRONICS_AND_ACCESSORIES",
+    "categoryName": "Consumer Electronics & Accessories"
+  },
+  {
+    "commodityId": "31",
+    "commodityCode": "MOBILE_PHONE",
+    "commodityName": "MOBILE PHONE",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "isMbgRestricted": true,
+    "showInCustomerPortal": true,
+    "categoryId": "CONSUMER_ELECTRONICS_AND_ACCESSORIES",
+    "categoryName": "Consumer Electronics & Accessories"
+  },
+  {
+    "commodityId": "32",
+    "commodityCode": "MLK",
+    "commodityName": "MILK",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "showInCustomerPortal": true,
+    "categoryId": "ESSENTIAL_SHIPMENTS",
+    "categoryName": "Essential Shipments"
+  },
+  {
+    "commodityId": "33",
+    "commodityCode": "MOSQUITO_NET",
+    "commodityName": "MOSQUITO NET",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "showInCustomerPortal": true,
+    "categoryId": "ESSENTIAL_SHIPMENTS",
+    "categoryName": "Essential Shipments"
+  },
+  {
+    "commodityId": "34",
+    "commodityCode": "N1",
+    "commodityName": "NON-DOCUMENT (OTHER THAN CLOTH)",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "NON_DOCUMENT_SHIPMENTS",
+    "categoryName": "Non-Document Shipments"
+  },
+  {
+    "commodityId": "35",
+    "commodityCode": "BAM",
+    "commodityName": "NOTEBOOK (PAPER BASED)",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "showInCustomerPortal": true,
+    "categoryId": "PAPER_BASED_MATERIAL",
+    "categoryName": "Paper Based Material"
+  },
+  {
+    "commodityId": "36",
+    "commodityCode": "FEM",
+    "commodityName": "PERSONAL EFFECTS (MAX 2KG)",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "showInCustomerPortal": true,
+    "categoryId": "GIFT_ITEMS_AND_PERSONAL_EFFECTS",
+    "categoryName": "Gift Items & Personal Effects"
+  },
+  {
+    "commodityId": "37",
+    "commodityCode": "PLASTIC_ITEM",
+    "commodityName": "PLASTIC ITEM",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "HOUSEHOLD_ITEMS",
+    "categoryName": "Household Items"
+  },
+  {
+    "commodityId": "38",
+    "commodityCode": "WFP",
+    "commodityName": "PULSE",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "showInCustomerPortal": true,
+    "categoryId": "ESSENTIAL_SHIPMENTS",
+    "categoryName": "Essential Shipments"
+  },
+  {
+    "commodityId": "39",
+    "commodityCode": "BD2",
+    "commodityName": "SHIPPING DOCUMENTS",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "PAPER_BASED_MATERIAL",
+    "categoryName": "Paper Based Material"
+  },
+  {
+    "commodityId": "40",
+    "commodityCode": "SM1",
+    "commodityName": "SWEETS",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "ESSENTIAL_SHIPMENTS",
+    "categoryName": "Essential Shipments"
+  },
+  {
+    "commodityId": "41",
+    "commodityCode": "TSHIRT",
+    "commodityName": "T-SHIRT",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "GIFT_ITEMS_AND_PERSONAL_EFFECTS",
+    "categoryName": "Gift Items & Personal Effects"
+  },
+  {
+    "commodityId": "42",
+    "commodityCode": "TOY",
+    "commodityName": "TOY",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "GIFT_ITEMS_AND_PERSONAL_EFFECTS",
+    "categoryName": "Gift Items & Personal Effects"
+  },
+  {
+    "commodityId": "43",
+    "commodityCode": "UMB",
+    "commodityName": "UMBRELLA",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "GIFT_ITEMS_AND_PERSONAL_EFFECTS",
+    "categoryName": "Gift Items & Personal Effects"
+  },
+  {
+    "commodityId": "44",
+    "commodityCode": "USB_CABLE",
+    "commodityName": "USB CABLE",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "categoryId": "CONSUMER_ELECTRONICS_AND_ACCESSORIES",
+    "categoryName": "Consumer Electronics & Accessories"
+  },
+  {
+    "commodityId": "45",
+    "commodityCode": "WATCH",
+    "commodityName": "WATCH",
+    "showInSmartApp": true,
+    "organisationId": "1",
+    "showInCustomerPortal": true,
+    "categoryId": "GIFT_ITEMS_AND_PERSONAL_EFFECTS",
+    "categoryName": "Gift Items & Personal Effects"
+  }
+]

@@ -1,5 +1,5 @@
-const ContentMaster = require("../../../../models/customer/v1/ContentMaster");
-const PriceListMaster = require("../../../../models/customer/v1/PriceListMaster");
+const ContentMaster = require("../../../../models/master/v1/ContentMaster");
+const PriceListMaster = require("../../../../models/master/v1/PriceListMaster");
 const getContentData = async (req, res) => {
   try {
     const pipe = [{

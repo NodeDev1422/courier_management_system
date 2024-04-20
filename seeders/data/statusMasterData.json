@@ -1,0 +1,125 @@
+[
+    {
+      "statusId": 1,
+      "statusOrder": 1,
+      "statusName": "Booked",
+      "statusDisplayName": "Booked",
+      "description": "The order has been booked or scheduled for processing.",
+      "createdBy": "system"
+    },
+    {
+      "statusId": 2,
+      "statusOrder": 2,
+      "statusName": "Picked Up",
+      "statusDisplayName": "Picked Up",
+      "description":
+        "The order items have been picked up from the seller's location or warehouse.",
+      "createdBy": "system"
+    },
+    {
+      "statusId": 3,
+      "statusOrder": 3,
+      "statusName": "Not Picked",
+      "statusDisplayName": "Not Picked",
+      "description": "The attempt to pick up the order items was unsuccessful.",
+      "createdBy": "system"
+    },
+    {
+      "statusId": 4,
+      "statusOrder": 4,
+      "statusName": "Reached to source Outlet",
+      "statusDisplayName": "Reached to source Outlet",
+      "description":
+        " The order has arrived at the original or source outlet, typically referring to the location where the order originated or where it is being dispatched from.",
+      "createdBy": "system"
+    },
+    {
+      "statusId": 5,
+      "statusOrder": 5,
+      "statusName": "In Transit",
+      "statusDisplayName": "In Transit",
+      "description":
+        "The order is currently in transit, being transported from one location to another.",
+      "createdBy": "system"
+    },
+    {
+      "statusId": 6,
+      "statusOrder": 6,
+      "statusName": "Reached to destination Outlet",
+      "statusDisplayName": "Reached to destination Outlet",
+      "description":
+        "The order has arrived at the final or destination outlet, typically referring to the location where the order is intended for delivery or pickup by the customer.",
+      "createdBy": "system"
+    },
+    {
+      "statusId": 7,
+      "statusOrder": 7,
+      "statusName": "Out for delivery",
+      "statusDisplayName": "Out for delivery",
+      "description":
+        "The order has reached its destination and is out for delivery to the customer.",
+      "createdBy": "system"
+    },
+    {
+      "statusId": 8,
+      "statusOrder": 8,
+      "statusName": "Delivered",
+      "statusDisplayName": "Delivered",
+      "description": "The order has been successfully delivered to the customer.",
+      "createdBy": "system"
+    },
+    {
+      "statusId": 9,
+      "statusOrder": 9,
+      "statusName": "Delivery Exception",
+      "statusDisplayName": "Delivery Exception",
+      "description":
+        "There is an exception or issue with the delivery of the order.",
+      "createdBy": "system"
+    },
+    {
+      "statusId": 10,
+      "statusOrder": 10,
+      "statusName": "Hold",
+      "statusDisplayName": "Hold",
+      "description":
+        "The order is being held for some reason, such as payment verification or customer request.",
+      "createdBy": "system"
+    },
+    {
+      "statusId": 11,
+      "statusOrder": 11,
+      "statusName": "Cancelled",
+      "statusDisplayName": "Cancelled",
+      "description":
+        "The order has been cancelled either by the customer or the seller.",
+      "createdBy": "system"
+    },
+    {
+      "statusId": 12,
+      "statusOrder": 12,
+      "statusName": "RTO in Transit",
+      "statusDisplayName": "RTO in Transit",
+      "description":
+        "The order is being returned to the seller (Return to Origin) while it's in transit.",
+      "createdBy": "system"
+    },
+    {
+      "statusId": 13,
+      "statusOrder": 13,
+      "statusName": "Lost",
+      "statusDisplayName": "Lost",
+      "description":
+        "The order is lost or cannot be located, typically indicating a severe issue with the delivery process.",
+      "createdBy": "system"
+    },
+    {
+      "statusId": 14,
+      "statusOrder": 14,
+      "statusName": "Damaged",
+      "statusDisplayName": "Damaged",
+      "description":
+        "The order items have been found to be damaged or defective upon delivery or inspection. This status indicates that the items may need to be returned, replaced, or refunded due to damage during transit or handling.",
+      "createdBy": "system"
+    }
+  ]

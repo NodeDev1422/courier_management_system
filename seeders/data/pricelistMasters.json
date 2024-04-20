@@ -1,0 +1,26 @@
+[{
+    "serviceType": "Express",
+    "ServiceTypeId": "express",
+    "distanceType": "local",
+    "contentId": [],
+    "volumeWeight": 10,
+    "weightUnit": "kg",
+    "fromUnit": 0,
+    "toUnit": 50,
+    "fromDistance": 0,
+    "toDistance": 100,
+    "basePrice": 100
+  },
+  {
+    "serviceType": "Normal",
+    "ServiceTypeId": "normal",
+    "distanceType": "national",
+    "contentId": [],
+    "volumeWeight": 10,
+    "weightUnit": "kg",
+    "fromUnit": 0,
+    "toUnit": 50,
+    "fromDistance": 0,
+    "toDistance": 100,
+    "basePrice": 75
+  }]
